@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.NavBar {
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.red {
+  color: red;
+}
+
+.red::after {
+  background-color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.orange::after {
+  background-color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.yellow::after {
+  background-color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.green::after {
+  background-color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.blue::after {
+  background-color: blue;
+}
+
+.purple {
+  color: purple;
+}
+
+.purple::after {
+  background-color: purple;
+}
+
+.NavBtn {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 50px;
+  position: relative;
+  font-size: 1.75em;
+  transition: 800ms;
+  padding-bottom: 4px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.NavBtn::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 1px 1px 2px black;
+  transform: scaleX(0.33);
+  transition: 400ms;
+}
+
+.NavBtn:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.NavBtn:hover::after {
+  transform: scaleX(1);
+}
+
+.red {
+  margin-left: 30px;
+}
+
+.purple {
+  float: right;
+}/*# sourceMappingURL=NavBar1.css.map */

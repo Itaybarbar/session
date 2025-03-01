@@ -1,0 +1,25 @@
+
+
+.NavBtn {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    position: relative;
+    font-size: 1.5em;
+}
+
+.NavBtn::after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(12, 114, 140, 0.744);
+    transform: scaleX(.33);
+    transition: 800ms;
+
+}
+.NavBtn:hover::after {
+    transform: scaleX(1);
+}
